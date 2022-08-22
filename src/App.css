@@ -28,6 +28,16 @@
   color: #61dafb;
 }
 
+.input,.submit{
+  font-size: calc(10px + 2vmin);
+  border-radius: 10px;
+}
+.submit{
+ margin-top: 1rem; 
+ color: #fff;
+ background-color:  #61dafb;
+ border: none;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

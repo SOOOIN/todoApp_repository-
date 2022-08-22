@@ -6,14 +6,21 @@ function displayMessage(message) {
 }
 
 function App() {
-  const [inputValue, handleChange, handleSunmit] = useInput('', displayMessage);
+  const [inputValue, handleChange, handleSubmit] = useInput('', displayMessage);
 
   return (
     <div className="App">
       <div className="App-header">
-        <h1>useInput</h1>
-        <input value={inputValue} onChange={handleChange} />
-        <button onClick={handleSunmit}>확인 </button>
+        <h1>check</h1>
+        <input
+          className="input"
+          value={inputValue}
+          onChange={handleChange}
+          placeholder={'Input name'}
+        />
+        <button className="submit" onClick={handleSubmit}>
+          Submit{' '}
+        </button>
       </div>
     </div>
   );
